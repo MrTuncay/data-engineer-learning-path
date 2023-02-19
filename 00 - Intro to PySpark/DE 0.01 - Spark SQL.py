@@ -32,6 +32,10 @@
 
 # COMMAND ----------
 
+spark.sparkContext.getConf().getAll()
+
+# COMMAND ----------
+
 # MAGIC %md ## Multiple Interfaces
 # MAGIC Spark SQL is a module for structured data processing with multiple interfaces.
 # MAGIC 
