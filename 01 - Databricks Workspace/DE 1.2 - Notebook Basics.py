@@ -197,7 +197,7 @@ print("Hello Python!")
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC -- SELECT * FROM demo_tmp_vw
+# MAGIC SELECT * FROM demo_tmp_vw
 
 # COMMAND ----------
 
@@ -271,8 +271,20 @@ print(f"DA.schema_name:       {DA.schema_name}")
 
 # COMMAND ----------
 
+path
+
+# COMMAND ----------
+
+dbutils.fs.ls("/mnt/dbacademy-datasets")
+
+# COMMAND ----------
+
 path = f"{DA.paths.datasets}"
 dbutils.fs.ls(path)
+
+# COMMAND ----------
+
+dbutils.help()
 
 # COMMAND ----------
 
